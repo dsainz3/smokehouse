@@ -1,0 +1,15 @@
+{
+  "name": "smokehouse",
+  "private": true,
+  "devDependencies": {
+    "doctoc": "2.2.1",
+    "markdownlint-cli2": "0.18.0"
+  },
+  "scripts": {
+    "lint:md": "markdownlint-cli2",
+    "toc": "doctoc README.md",
+    "toc:check": "node scripts/check_toc.mjs",
+    "recipes:check": "node scripts/check_recipes_have_feedback.mjs",
+    "test": "npm run lint:md && npm run toc:check && npm run recipes:check"
+  }
+}

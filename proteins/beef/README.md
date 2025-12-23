@@ -1,0 +1,3 @@
+# Beef
+
+- No recipes yet.
