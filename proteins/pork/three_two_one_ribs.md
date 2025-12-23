@@ -20,7 +20,7 @@
 - Optional: brown sugar, honey, or maple syrup (wrap)
 - Optional: butter (wrap)
 - Optional: BBQ sauce (finish)
-- Optional: apple juice or cider vinegar (spritz)
+- Spritz: **75% pineapple juice + 25% water**
 
 ---
 
@@ -45,9 +45,14 @@
 ### Timing (3-2-1)
 
 1. **3 hours (smoke):** unwrapped at 225°F
-   - Optional spritz every 45–60 minutes after bark starts setting
-2. **2 hours (wrap):** wrap tightly in foil (or butcher paper for a less “braised” texture)
-   - Optional in wrap: butter + brown sugar + honey/maple
+   - Spritz every 45–60 minutes after bark starts setting: **75% pineapple juice + 25% water**
+2. **2 hours (wrap):** wrap tight (see notes below)
+   - In wrap (per rack):
+     - **2 tbsp butter**
+     - **3 tbsp brown sugar**
+     - Splash of **50/50 pineapple juice + water** (enough to wet the wrap contents)
+   - If using liquid: **double-wrap foil tight** so it doesn’t leak.
+   - If you prefer butcher paper: it’s best for a less “braised” texture, but it won’t hold liquid well—use little/no liquid.
 3. **1 hour (finish):** unwrap, return to smoker to reset bark
    - Optional: glaze/sauce during last 15–30 minutes
 
