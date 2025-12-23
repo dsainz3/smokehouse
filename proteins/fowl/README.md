@@ -1,5 +1,3 @@
-# Fowl
+# Fowl (Deprecated)
 
-Includes chicken, pheasant, turkey, Cornish game hens, and other birds.
-
-- No recipes yet.
+Use `proteins/poultry/` instead.

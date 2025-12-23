@@ -14,7 +14,7 @@ Organize recipes under `proteins/` using these top-level categories:
 - `proteins/pork/`
 - `proteins/beef/`
 - `proteins/fish/`
-- `proteins/fowl/` (chicken, pheasant, turkey, Cornish game hens, etc.)
+- `proteins/poultry/` (chicken, pheasant, turkey, Cornish game hens, etc.)
 - `proteins/vegetables/` (eggplant, cauliflower steaks, and other vegan/vegetarian grill mains)
 
 ## Adding a Cook Log

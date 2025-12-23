@@ -59,7 +59,7 @@ This repo favors **practical repeatability** over perfection.
 
 Recipes are organized by protein.
 
-- [Fowl](proteins/fowl/)
+- [Poultry](proteins/poultry/)
 - [Pork](proteins/pork/)
 - [Beef](proteins/beef/)
 - [Fish](proteins/fish/)
