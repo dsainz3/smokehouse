@@ -8,6 +8,7 @@
 - Smoker / Grill: Pit Boss Austin XL
 - Cook Style: Smoke | Grill | Smoke + Finish
 - Wood (if smoking):
+- Author:
 - Notes:
 
 ---

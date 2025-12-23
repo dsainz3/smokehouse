@@ -6,6 +6,7 @@
 2. Fill out the sections you used (not every section is required).
 3. Prefer “cook to temperature, not time” and include target temps where relevant.
 4. Add `Feedback & Ratings` after you’ve cooked it at least once.
+5. Record the cook/author (name, initials, or handle) so readers know who ran the recipe.
 
 ### Protein Branching
 
