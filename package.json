@@ -3,7 +3,7 @@
   "private": true,
   "devDependencies": {
     "doctoc": "2.2.1",
-    "markdownlint-cli2": "0.18.0"
+    "markdownlint-cli2": "0.20.0"
   },
   "scripts": {
     "lint:md": "markdownlint-cli2",
