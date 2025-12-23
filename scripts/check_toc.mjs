@@ -53,6 +53,31 @@ function sha256(content) {
   return crypto.createHash("sha256").update(normalized).digest("hex");
 }
 
+function normalizeForCompare(text) {
+  return (
+    text
+      .replace(/\r\n/g, "\n")
+      .split("\n")
+      .map((line) => line.replace(/\s+$/u, ""))
+      .join("\n")
+      .trimEnd() + "\n"
+  );
+}
+
+function extractDoctocBlock(markdown) {
+  const normalized = markdown.replace(/\r\n/g, "\n");
+  const startMatch = normalized.match(/^[^\S\n]*<!-- START doctoc.*-->[^\S\n]*$/m);
+  const endMatch = normalized.match(/^[^\S\n]*<!-- END doctoc.*-->[^\S\n]*$/m);
+  if (!startMatch || !endMatch) return null;
+
+  const startIndex = normalized.indexOf(startMatch[0]);
+  const endIndex = normalized.indexOf(endMatch[0]);
+  if (startIndex === -1 || endIndex === -1 || endIndex < startIndex) return null;
+
+  const endLineEnd = endIndex + endMatch[0].length;
+  return normalized.slice(startIndex, endLineEnd);
+}
+
 requireFile(README_PATH);
 const original = fs.readFileSync(README_PATH, "utf8");
 requireDoctocMarkers(original);
@@ -70,7 +95,14 @@ if (result.error) {
 if (result.status !== 0) process.exit(result.status ?? 1);
 
 const updated = fs.readFileSync(tempReadme, "utf8");
-if (sha256(original) !== sha256(updated)) {
+const originalBlock = extractDoctocBlock(original);
+const updatedBlock = extractDoctocBlock(updated);
+if (!originalBlock || !updatedBlock) {
+  console.error("Unable to locate doctoc markers/section in README.md.");
+  process.exit(2);
+}
+
+if (sha256(normalizeForCompare(originalBlock)) !== sha256(normalizeForCompare(updatedBlock))) {
   console.error("README.md Table of Contents is out of date.");
   console.error("Run `npm run toc` and commit the updated README.md.");
   process.exit(1);
