@@ -20,26 +20,26 @@ Remaining:
 
 ## GitHub Branch Policy (main)
 
-- [ ] Protect `main` branch
-  - [ ] Require pull request before merging
-  - [ ] Require 1 approval and dismiss stale approvals
-  - [ ] Require CODEOWNER review (only `@dsainz3`)
-  - [ ] Require status checks: `ci` and require branches up to date
-  - [ ] Require conversation resolution
-  - [ ] Require linear history
-  - [ ] Block force pushes
-  - [ ] Block deletions
+- [x] Protect `main` branch
+  - [x] Require pull request before merging
+  - [x] Require 1 approval and dismiss stale approvals
+  - [x] Require CODEOWNER review (only `@dsainz3`)
+  - [x] Require status checks and require branches up to date
+  - [x] Require conversation resolution
+  - [x] Require linear history
+  - [x] Block force pushes
+  - [x] Block deletions
 
 ## Security Hygiene
 
 - [x] Add Dependabot config (`.github/dependabot.yml`)
-- [ ] Enable Dependabot alerts + security updates (GitHub repo settings)
-- [ ] Enable secret scanning + push protection (GitHub repo settings)
+- [x] Enable Dependabot security updates (GitHub repo settings)
+- [x] Enable secret scanning + push protection (GitHub repo settings)
 
 ## Optional Hardening
 
 - [x] Add `CODEOWNERS` (`.github/CODEOWNERS`)
-- [ ] Require signed commits (GitHub branch protection)
+- [x] Require signed commits (GitHub branch protection)
 
 Done criteria:
 
