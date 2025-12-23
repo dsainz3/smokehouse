@@ -7,6 +7,16 @@
 3. Prefer “cook to temperature, not time” and include target temps where relevant.
 4. Add `Feedback & Ratings` after you’ve cooked it at least once.
 
+### Protein Branching
+
+Organize recipes under `proteins/` using these top-level categories:
+
+- `proteins/pork/`
+- `proteins/beef/`
+- `proteins/fish/`
+- `proteins/fowl/` (chicken, pheasant, turkey, Cornish game hens, etc.)
+- `proteins/vegetables/` (eggplant, cauliflower steaks, and other vegan/vegetarian grill mains)
+
 ## Adding a Cook Log
 
 - Add logs under `cooks/` as dated Markdown files (example: `2025-12-23_321_ribs.md`).

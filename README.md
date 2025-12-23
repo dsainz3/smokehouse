@@ -59,10 +59,11 @@ This repo favors **practical repeatability** over perfection.
 
 Recipes are organized by protein.
 
-- [Poultry](proteins/poultry/)
+- [Fowl](proteins/fowl/)
 - [Pork](proteins/pork/)
 - [Beef](proteins/beef/)
 - [Fish](proteins/fish/)
+- [Vegetables](proteins/vegetables/)
 
 ---
 
@@ -106,6 +107,7 @@ Holiday-specific cooks live here.
 Cook logs document what actually happened during a cook.
 
 - [Cook Logs](cooks/)
+- Start from `TEMPLATE_COOK_LOG.md`
 
 ---
 

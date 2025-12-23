@@ -8,7 +8,11 @@ const SCAN_DIRS = [
   path.join(ROOT, "holidays"),
 ];
 
-const IGNORE_BASENAMES = new Set(["README.md"]);
+function shouldIgnoreFile(basename) {
+  if (basename.toLowerCase() === "readme.md") return true;
+  if (basename.toLowerCase().startsWith("readme.")) return true;
+  return false;
+}
 
 function listMarkdownFiles(dirPath) {
   if (!fs.existsSync(dirPath)) return [];
@@ -22,7 +26,7 @@ function listMarkdownFiles(dirPath) {
     }
     if (!entry.isFile()) continue;
     if (!entry.name.toLowerCase().endsWith(".md")) continue;
-    if (IGNORE_BASENAMES.has(entry.name)) continue;
+    if (shouldIgnoreFile(entry.name)) continue;
     files.push(fullPath);
   }
   return files;
@@ -49,4 +53,3 @@ if (missing.length > 0) {
 }
 
 console.log(`Recipe feedback check passed (${recipeFiles.length} file(s)).`);
-

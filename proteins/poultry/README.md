@@ -1,3 +1,0 @@
-# Poultry
-
-- No recipes yet.
