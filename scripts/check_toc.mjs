@@ -78,6 +78,15 @@ function extractDoctocBlock(markdown) {
   return normalized.slice(startIndex, endLineEnd);
 }
 
+function extractDoctocListLines(markdown) {
+  const block = extractDoctocBlock(markdown);
+  if (!block) return null;
+  return normalizeForCompare(block)
+    .split("\n")
+    .filter((line) => /^\s*-\s+\[.+\]\(.+\)\s*$/u.test(line))
+    .map((line) => line.trim());
+}
+
 requireFile(README_PATH);
 const original = fs.readFileSync(README_PATH, "utf8");
 requireDoctocMarkers(original);
@@ -95,14 +104,14 @@ if (result.error) {
 if (result.status !== 0) process.exit(result.status ?? 1);
 
 const updated = fs.readFileSync(tempReadme, "utf8");
-const originalBlock = extractDoctocBlock(original);
-const updatedBlock = extractDoctocBlock(updated);
-if (!originalBlock || !updatedBlock) {
+const originalList = extractDoctocListLines(original);
+const updatedList = extractDoctocListLines(updated);
+if (!originalList || !updatedList) {
   console.error("Unable to locate doctoc markers/section in README.md.");
   process.exit(2);
 }
 
-if (sha256(normalizeForCompare(originalBlock)) !== sha256(normalizeForCompare(updatedBlock))) {
+if (sha256(originalList.join("\n") + "\n") !== sha256(updatedList.join("\n") + "\n")) {
   console.error("README.md Table of Contents is out of date.");
   console.error("Run `npm run toc` and commit the updated README.md.");
   process.exit(1);
