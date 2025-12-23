@@ -59,7 +59,7 @@ This repo favors **practical repeatability** over perfection.
 
 Recipes are organized by protein.
 
-- [Fowl](proteins/fowl/)
+- [Poultry](proteins/poultry/)
 - [Pork](proteins/pork/)
 - [Beef](proteins/beef/)
 - [Fish](proteins/fish/)
@@ -116,6 +116,7 @@ Cook logs document what actually happened during a cook.
 To keep recipes consistent, use the provided template:
 
 - **[Recipe Template](TEMPLATE_RECIPE.md)**
+  - Include the cook/author (name or initials) so collaborators know who wrote the guide.
 
 Copy the template when adding a new recipe and fill it out as needed.
 Not all sections are required for every cook.
