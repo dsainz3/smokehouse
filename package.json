@@ -2,7 +2,7 @@
   "name": "smokehouse",
   "private": true,
   "devDependencies": {
-    "doctoc": "2.2.1",
+    "doctoc": "2.4.0",
     "markdownlint-cli2": "0.20.0"
   },
   "scripts": {
