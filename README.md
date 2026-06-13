@@ -31,6 +31,7 @@ This helps balance doneness without constant rotation.
 - [Recipes](#recipes)
 - [Holidays](#holidays)
 - [Marinades](#marinades)
+- [Cold Smoking](#cold-smoking)
 - [Techniques](#techniques)
 - [Equipment](#equipment)
 - [Cook Logs](#cook-logs)
@@ -84,6 +85,16 @@ Holiday-specific cooks live here.
 ## Marinades
 
 - [Whiskey River Marinade](marinades/whiskey_river.md)
+
+---
+
+## Cold Smoking
+
+Cold smoking flavors food without cooking it (below 90°F). Requires an external smoke generator
+on the Pit Boss Austin XL.
+
+- [Cold Smoking Overview](cold_smoking/)
+  - [Cold Smoking Guide](cold_smoking/cold_smoking_overview.md)
 
 ---
 

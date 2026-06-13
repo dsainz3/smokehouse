@@ -1,7 +1,8 @@
 import fs from "node:fs";
 import path from "node:path";
+import { fileURLToPath } from "node:url";
 
-const ROOT = process.cwd();
+const ROOT = path.resolve(fileURLToPath(import.meta.url), "../..");
 
 const SCAN_DIRS = [
   path.join(ROOT, "proteins"),
