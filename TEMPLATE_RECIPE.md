@@ -60,6 +60,14 @@
 
 ---
 
+## Recommended Accessories (Optional)
+
+| Accessory | Purpose | Link |
+| --- | --- | --- |
+| TBD | TBD | Amazon — add link |
+
+---
+
 ## Results
 
 - Texture:
