@@ -3,8 +3,10 @@ import crypto from "node:crypto";
 import fs from "node:fs";
 import os from "node:os";
 import path from "node:path";
+import { fileURLToPath } from "node:url";
 
-const README_PATH = path.resolve("README.md");
+const REPO_ROOT = path.resolve(fileURLToPath(import.meta.url), "../..");
+const README_PATH = path.join(REPO_ROOT, "README.md");
 
 function requireFile(filePath) {
   if (!fs.existsSync(filePath)) {
@@ -25,7 +27,7 @@ function requireDoctocMarkers(markdown) {
 
 function resolveDoctocBin() {
   const binName = process.platform === "win32" ? "doctoc.cmd" : "doctoc";
-  const binPath = path.resolve("node_modules", ".bin", binName);
+  const binPath = path.join(REPO_ROOT, "node_modules", ".bin", binName);
   if (!fs.existsSync(binPath)) {
     console.error(`Missing doctoc binary at ${binPath}`);
     console.error("Install dev dependencies with `npm ci` (or `npm install`).");
