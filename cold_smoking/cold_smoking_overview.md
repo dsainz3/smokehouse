@@ -15,7 +15,7 @@
 
 | Item | Purpose | Link |
 | --- | --- | --- |
-| A-MAZE-N pellet tube smoker (12") | Produces cold smoke independently of the grill's heat | Amazon — add link |
+| Pellet smoker tube (12") | Produces cold smoke independently of the grill's heat | [Amazon](https://www.amazon.com/dp/B07JGVBKN3) — see [equipment notes](../equipment/pellet_smoker_tube.md) |
 | A-MAZE-N pellet tray | Alternative to tube; longer burn time for extended smokes | Amazon — add link |
 | Ambient thermometer (grill-level) | Verify chamber stays below 90°F | Amazon — add link |
 | Curing salt / Prague Powder (for proteins) | Food safety — inhibits botulism during long cold smokes | Amazon — add link |

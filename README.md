@@ -110,6 +110,8 @@ on the Pit Boss Austin XL.
 ## Equipment
 
 - [Pit Boss Austin XL Notes](equipment/pit_boss_austin_xl.md)
+- [BBQ Resting Blanket](equipment/bbq_resting_blanket.md)
+- [12" Pellet Smoker Tube](equipment/pellet_smoker_tube.md)
 
 ---
 
