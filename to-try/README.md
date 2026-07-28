@@ -6,7 +6,7 @@ Things I want to smoke. Add new items with:
 .\scripts\add_to_try.ps1 -Name "Item name" -Category pork -Notes "Optional notes"
 ```
 
-Categories: `pork` · `beef` · `fowl` · `fish` · `vegetables` · `other`
+Categories: `pork` · `beef` · `poultry` · `fish` · `vegetables` · `other`
 
 ---
 
