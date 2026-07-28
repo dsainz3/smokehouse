@@ -8,7 +8,7 @@
 #>
 param(
     [Parameter(Mandatory)][string]$Name,
-    [Parameter(Mandatory)][ValidateSet('pork','beef','fowl','fish','vegetables','other')][string]$Category,
+    [Parameter(Mandatory)][ValidateSet('pork','beef','poultry','fish','vegetables','other')][string]$Category,
     [string]$Notes = ""
 )
 
