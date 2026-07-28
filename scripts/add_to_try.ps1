@@ -12,7 +12,7 @@ param(
     [string]$Notes = ""
 )
 
-$file = Join-Path $PSScriptRoot "..\to-try\README.md"
+$file = Join-Path (Join-Path $PSScriptRoot '..') (Join-Path 'to-try' 'README.md')
 $content = Get-Content $file -Raw
 
 $heading = "## " + (Get-Culture).TextInfo.ToTitleCase($Category)
