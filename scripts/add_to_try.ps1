@@ -38,6 +38,16 @@ for ($i = 0; $i -lt $lines.Count; $i++) {
             $out.Add($lines[$j])
             $j++
         }
+
+        # Trim trailing blank lines so the new entry is appended to the section content, not after the separator
+        while ($out.Count -gt 0 -and $out[$out.Count - 1] -match '^\s*$') {
+            $out.RemoveAt($out.Count - 1)
+        }
+
+        if ($out.Count -gt 0 -and $out[$out.Count - 1] -eq $heading) {
+            $out.Add("")
+        }
+
         $out.Add($entry)
         $out.Add("")
         $i = $j - 1
