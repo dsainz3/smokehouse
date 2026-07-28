@@ -20,7 +20,7 @@ Categories: `pork` · `beef` · `poultry` · `fish` · `vegetables` · `other`
 
 - [ ] **Smoked brisket point** — try with tallow wrap instead of butcher paper
 
-## Fowl
+## Poultry
 
 ## Fish
 
